@@ -14,7 +14,7 @@ Dentro de este directorio, deberías colocar tus pruebas unitarias en paquetes q
 # Configuración en el pom.xml
 Asegúrate de que tu archivo pom.xml contenga la configuración adecuada para la ejecución de tests, como la dependencia de JUnit y el plugin maven-surefire-plugin. El plugin maven-surefire-plugin es el encargado de ejecutar los tests en un proyecto Maven.
 
-<dependencies>
+/* <dependencies>
     <!-- Dependencia de JUnit -->
     <dependency>
         <groupId>junit</groupId>
@@ -34,6 +34,7 @@ Asegúrate de que tu archivo pom.xml contenga la configuración adecuada para la
         </plugin>
     </plugins>
 </build>
+*/
 
 # Conclusion
 Mantener una estructura de directorios estándar y una configuración correcta en el pom.xml es esencial para que los unit tests se ejecuten correctamente en el pipeline de Jenkins. Asegúrate de seguir las recomendaciones mencionadas para evitar problemas durante la ejecución de las pruebas.
