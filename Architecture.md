@@ -1,6 +1,6 @@
 # Jenkins-DEV-TEST-Architecture
 
-# Ubicación de los Unit Tests para el Pipeline de Jenkins Introducción
+# Ubicación de los Unit Tests para el Pipeline de Jenkins
 # Introducción
 Este documento especifica la estructura de directorios recomendada para asegurarse de que los unit tests sean detectados y ejecutados correctamente en el pipeline de Jenkins.
 
