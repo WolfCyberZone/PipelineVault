@@ -14,26 +14,28 @@ Dentro de este directorio, deberías colocar tus pruebas unitarias en paquetes q
 # Configuración en el pom.xml
 Asegúrate de que tu archivo pom.xml contenga la configuración adecuada para la ejecución de tests, como la dependencia de JUnit y el plugin maven-surefire-plugin. El plugin maven-surefire-plugin es el encargado de ejecutar los tests en un proyecto Maven.
 
-# <dependencies>
- #   <!-- Dependencia de JUnit -->
-  #  <dependency>
-   #     <groupId>junit</groupId>
-    #    <artifactId>junit</artifactId>
-     #   <version>[versión]</version>
-      #  <scope>test</scope>
-   # </dependency>
-# </dependencies>
+```xml
+<dependencies>
+    <!-- Dependencia de JUnit -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>[versión]</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
 
-# <build>
-  #  <plugins>
-   #     <!-- Plugin maven-surefire para ejecutar tests -->
-    #    <plugin>
-     #       <groupId>org.apache.maven.plugins</groupId>
-      # <artifactId>maven-surefire-plugin</artifactId>
-       # <version>[versión]</version>
-        # </plugin>
-     # </plugins>
-# </build>
+<build>
+    <plugins>
+        <!-- Plugin maven-surefire para ejecutar tests -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>[versión]</version>
+        </plugin>
+    </plugins>
+</build>
+
 
 
 # Conclusion
