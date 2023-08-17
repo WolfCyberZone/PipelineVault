@@ -40,6 +40,7 @@ Asegúrate de que tu archivo pom.xml contenga la configuración adecuada para la
 # Conclusion
 Mantener una estructura de directorios estándar y una configuración correcta en el pom.xml es esencial para que los unit tests se ejecuten correctamente en el pipeline de Jenkins. Asegúrate de seguir las recomendaciones mencionadas para evitar problemas durante la ejecución de las pruebas.
 
+
 # Englis Version
 # Jenkins-DEV-TEST-Architecture
 
