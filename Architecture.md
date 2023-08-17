@@ -84,10 +84,5 @@ Make sure your pom.xml file contains the appropriate settings for test execution
 # Conclusion
 Maintaining a standard directory structure and correct configuration in the pom.xml is essential for unit tests to run correctly in the Jenkins pipeline. Make sure to follow the mentioned recommendations to avoid issues during test execution.
 
-Created by: SDET-Michael A. Camacho
-
---- 
-
-You can copy and paste the above content as needed!
 
 Created by: SDET-Michael A. Camacho
