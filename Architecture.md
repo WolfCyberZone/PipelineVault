@@ -40,4 +40,54 @@ Asegúrate de que tu archivo pom.xml contenga la configuración adecuada para la
 # Conclusion
 Mantener una estructura de directorios estándar y una configuración correcta en el pom.xml es esencial para que los unit tests se ejecuten correctamente en el pipeline de Jenkins. Asegúrate de seguir las recomendaciones mencionadas para evitar problemas durante la ejecución de las pruebas.
 
+-----------------------------------------------------------------------------------------------------------------------------
+
+# Jenkins-DEV-TEST-Architecture
+
+# Location of Unit Tests for Jenkins Pipeline
+# Introduction
+This document specifies the recommended directory structure to ensure that unit tests are detected and run correctly in the Jenkins pipeline.
+
+# Directory Structure
+In a typical Maven project, the directory structure follows a standard format. The unit tests should be located in the following directory:
+
+src/test/java/
+
+Within this directory, you should place your unit tests in packages that reflect the structure of the main source code. For example, if you have a class in src/main/java/com/myapp/MainClass.java, then the unit test for that class should be in src/test/java/com/myapp/MainClassTest.java.
+
+# Configuration in pom.xml
+Make sure your pom.xml file contains the appropriate settings for test execution, such as the JUnit dependency and the maven-surefire-plugin. The maven-surefire-plugin is responsible for running the tests in a Maven project.
+
+```xml
+<dependencies>
+    <!-- JUnit Dependency -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>[version]</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+
+<build>
+    <plugins>
+        <!-- maven-surefire plugin to run tests -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>[version]</version>
+        </plugin>
+    </plugins>
+</build>
+```
+
+# Conclusion
+Maintaining a standard directory structure and correct configuration in the pom.xml is essential for unit tests to run correctly in the Jenkins pipeline. Make sure to follow the mentioned recommendations to avoid issues during test execution.
+
+Created by: SDET-Michael A. Camacho
+
+--- 
+
+You can copy and paste the above content as needed!
+
 Created by: SDET-Michael A. Camacho
